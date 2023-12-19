@@ -1,0 +1,283 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: #424242;
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+header {
+    background: #00695c;
+    color: white;
+    padding: 15px 0;
+    border-bottom: #004d40 4px solid;
+}
+header a {
+    color: #cfd8dc;
+    text-decoration: none;
+    font-size: 18px;
+}
+header ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+header li {
+    display: inline;
+    margin: 0 20px;
+}
+header #branding {
+    text-align: center;
+}
+header #branding h1 {
+    margin: 0;
+}
+header nav {
+    margin-top: 5px;
+}
+header .highlight, header .current a {
+    color: #a7ffeb;
+    font-weight: bold;
+}
+header a:hover {
+    color: #ffccbc;
+}
+.banner {
+    background-color: red;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+.banner h1 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: bold;
+}
+.main-col {
+    float: left;
+    width: 65%;
+    padding: 20px;
+}
+.side-col {
+    float: right;
+    width: 30%;
+    background: white;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 2px 2px 8px 0 rgba(0,0,0,0.2);
+}
+.section {
+    padding: 20px 0;
+}
+.section h2 {
+    font-size: 24px;
+    color: #00796b;
+}
+.section ul {
+    padding: 0;
+    list-style: square inside;
+}
+.section ul li {
+    margin-bottom: 15px;
+}
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #004d40;
+    color: white;
+    font-size: 16px;
+}
+
+
+/* Estilo de la Foto de Perfil */
+.perfil {
+    text-align: center;
+    padding: 20px;
+}
+
+.perfil img {
+    width: 150px; /* Ajusta según sea necesario */
+    height: auto;
+    border-radius: 50%; /* Hace la imagen circular */
+    border: 3px solid #009688; /* Borde, opcional */
+}
+
+a {
+    cursor: url(mano.png), default; }
+
+
+
+/* Cambiar el estilo del puntero de modo oscuro*/
+.slider.round{
+    cursor: url(mano.png), default; }
+
+
+/* Cambiar el estilo del puntero */
+body {
+    cursor: url(cursor.png), default; } /*Reemplaza con la ruta de tu cursor personalizado 
+
+
+
+    /* Estilos para los iconos */
+.icon {
+    width: 30px; /* Ajusta según el tamaño deseado */
+    height: 30px; /* Ajusta según el tamaño deseado */
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+
+
+
+
+/* Estilos previos... */
+
+/* Estilos para el switch del modo oscuro */
+.theme-switch-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed; /* Fija el switch en una posición en la pantalla */
+    top: 20px; /* Espacio desde la parte superior de la pantalla */
+    right: 20px; /* Espacio desde la parte derecha de la pantalla */
+    z-index: 1000; /* Asegura que el switch esté sobre otros elementos */
+    
+}
+
+.theme-switch {
+    display: inline-block;
+    height: 34px;
+    position: relative;
+    width: 60px;
+}
+
+.theme-switch input {
+    display:none;
+}
+
+.slider {
+    background-color: #ccc;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+}
+
+.slider:before {
+    background-color: white;
+    bottom: 4px;
+    content: "";
+    height: 26px;
+    left: 4px;
+    position: absolute;
+    transition: .4s;
+    width: 26px;
+}
+
+input:checked + .slider {
+    background-color: #66bb6a;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* Estilos para el modo oscuro */
+body.dark-mode {
+    background-color: #424242;
+    color: #e0e0e0;
+}
+
+/* Aquí puedes añadir más estilos para elementos específicos en el modo oscuro */
+
+
+
+
+
+.imagen-sobre-mi img {
+    max-width: 100%; /* Asegura que la imagen no sea más ancha que su contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 50%; /* Opcional: hace la imagen circular */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    display: block; /* Hace que la imagen se comporte como un bloque */
+    max-height: 200px; /* Ajusta esto según tus necesidades */
+    width: auto; /* Mantiene la proporción de la imagen */
+    border: 3px solid #009688; /* Opcional: añade un borde a la imagen */
+}
+
+
+
+
+@keyframes nieve {
+    0% {
+        top: -10px;
+    }
+    100% {
+        top: calc(100vh + 50px);
+    }
+}
+
+i {
+    position: absolute;
+    
+    background: #fffafa;
+    border-radius: 50%;
+    box-shadow: inset 0 -1px 1px rgb(114, 114, 114);
+    top: -10px;
+    animation: nieve linear infinite;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos para la página de Proyectos */
+#acerca-de, #repositorio-enlaces {
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+#repositorio-enlaces ul {
+    list-style: none; /* Elimina los marcadores de lista */
+    padding: 0;
+}
+
+#repositorio-enlaces ul li {
+    margin-bottom: 10px;
+}
+
+#repositorio-enlaces ul li a {
+    color: #00695c; /* Ajusta el color según tu preferencia */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+}
+
+#repositorio-enlaces ul li a:hover {
+    text-decoration: underline; /* Añade un efecto al pasar el mouse */
+}
