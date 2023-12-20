@@ -216,3 +216,43 @@ body.dark-mode .side-col {
     background-color: #ff0000; /* Cambia a rojo */
     color: #ffffff; /* Cambia el texto a blanco */
 }
+
+
+
+.imagen-sobre-mi img {
+    max-width: 100%; /* Asegura que la imagen no sea más ancha que su contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 50%; /* Opcional: hace la imagen circular */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    display: block; /* Hace que la imagen se comporte como un bloque */
+    max-height: 200px; /* Ajusta esto según tus necesidades */
+    width: auto; /* Mantiene la proporción de la imagen */
+    border: 3px solid #009688; /* Opcional: añade un borde a la imagen */
+}
+
+
+
+
+@keyframes nieve {
+    0% {
+        top: -10px;
+    }
+    100% {
+        top: calc(100vh + 50px);
+    }
+}
+
+i {
+    position: absolute;
+    
+    background: #fffafa;
+    border-radius: 50%;
+    box-shadow: inset 0 -1px 1px rgb(114, 114, 114);
+    top: -10px;
+    animation: nieve linear infinite;
+}
+
+
+
+
+
