@@ -219,6 +219,21 @@ body.dark-mode .side-col {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .imagen-sobre-mi img {
     max-width: 100%; /* Asegura que la imagen no sea más ancha que su contenedor */
     height: auto; /* Mantiene la proporción de la imagen */
@@ -256,3 +271,52 @@ i {
 
 
 
+
+
+
+
+
+
+
+
+
+/* Estilos para la página de Proyectos */
+#acerca-de, #repositorio-enlaces {
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+
+/* Si tienes otros elementos dentro de #acerca-de que necesitan estilos específicos, añádelos aquí */
+body.dark-mode #acerca-de h2,
+body.dark-mode #acerca-de p,
+body.dark-mode .side-col li {
+    color: #424242; /* Esto garantiza que todos los textos en side-col sean blancos */
+}
+
+
+
+
+
+
+
+
+#repositorio-enlaces ul {
+    list-style: none; /* Elimina los marcadores de lista */
+    padding: 0;
+}
+
+#repositorio-enlaces ul li {
+    margin-bottom: 10px;
+}
+
+#repositorio-enlaces ul li a {
+    color: #00695c; /* Ajusta el color según tu preferencia */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+}
+
+#repositorio-enlaces ul li a:hover {
+    text-decoration: underline; /* Añade un efecto al pasar el mouse */
+}
