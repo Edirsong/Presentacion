@@ -57,6 +57,7 @@ header a:hover {
     margin: 0;
     font-size: 28px;
     font-weight: bold;
+    backgroung: #1E90FF
 }
 .main-col {
     float: left;
@@ -93,36 +94,26 @@ footer {
     font-size: 16px;
 }
 
-
 /* Estilo de la Foto de Perfil */
 .perfil {
     text-align: center;
     padding: 20px;
 }
-
 .perfil img {
     width: 150px; /* Ajusta según sea necesario */
     height: auto;
     border-radius: 50%; /* Hace la imagen circular */
     border: 3px solid #009688; /* Borde, opcional */
 }
-
 a {
     cursor: url(mano.png), default; }
-
-
 
 /* Cambiar el estilo del puntero de modo oscuro*/
 .slider.round{
     cursor: url(mano.png), default; }
-
-
 /* Cambiar el estilo del puntero */
 body {
     cursor: url(cursor.png), default; } /*Reemplaza con la ruta de tu cursor personalizado 
-
-
-
     /* Estilos para los iconos */
 .icon {
     width: 30px; /* Ajusta según el tamaño deseado */
@@ -130,9 +121,6 @@ body {
     vertical-align: middle;
     margin-right: 10px;
 }
-
-
-
 
 
 /* Estilos previos... */
@@ -206,9 +194,6 @@ body.dark-mode {
 
 /* Aquí puedes añadir más estilos para elementos específicos en el modo oscuro */
 
-
-
-
 /* Estilos existentes para side-col... */
 
 /* Estilos específicos para side-col en modo oscuro */
@@ -216,23 +201,6 @@ body.dark-mode .side-col {
     background-color: #ff0000; /* Cambia a rojo */
     color: #ffffff; /* Cambia el texto a blanco */
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .imagen-sobre-mi img {
     max-width: 100%; /* Asegura que la imagen no sea más ancha que su contenedor */
@@ -244,8 +212,6 @@ body.dark-mode .side-col {
     width: auto; /* Mantiene la proporción de la imagen */
     border: 3px solid #009688; /* Opcional: añade un borde a la imagen */
 }
-
-
 
 
 @keyframes nieve {
@@ -267,19 +233,6 @@ i {
     animation: nieve linear infinite;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Estilos para la página de Proyectos */
 #acerca-de, #repositorio-enlaces {
     background-color: #f5f5f5;
@@ -288,20 +241,12 @@ i {
     border-radius: 10px;
 }
 
-
 /* Si tienes otros elementos dentro de #acerca-de que necesitan estilos específicos, añádelos aquí */
 body.dark-mode #acerca-de h2,
 body.dark-mode #acerca-de p,
 body.dark-mode .side-col li {
     color: #424242; /* Esto garantiza que todos los textos en side-col sean blancos */
 }
-
-
-
-
-
-
-
 
 #repositorio-enlaces ul {
     list-style: none; /* Elimina los marcadores de lista */
