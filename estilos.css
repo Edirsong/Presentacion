@@ -12,6 +12,7 @@ body {
     padding: 0;
     background-color: white;
     color: #424242;
+    cursor: url(cursor.png), default; /* Reemplaza con la ruta de tu cursor personalizado */
 }
 
 /* Contenedor principal */
@@ -208,7 +209,10 @@ footer a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 20px 0;
+    position: fixed; /* Cambia a fixed para posicionar el switch en la pantalla */
+    top: 20px; /* Ajusta la distancia desde la parte superior */
+    right: 20px; /* Ajusta la distancia desde la parte derecha */
+    z-index: 1000; /* Asegura que el switch esté sobre otros elementos */
 }
 .theme-switch {
     display: inline-block;
@@ -261,10 +265,13 @@ body.dark-mode .side-col {
     background-color: #1e90ff;
     color: #ffffff;
 }
-body.dark-mode #acerca-de h2,
-body.dark-mode #acerca-de p,
-body.dark-mode .side-col li {
-    color: #ffffff;
+body.dark-mode .section ul li {
+    color: #e0e0e0; /* Cambia el color del texto de las listas en el modo oscuro */
+}
+body.dark-mode blockquote {
+    background: #555555; /* Fondo del bloque de citas en modo oscuro */
+    color: #e0e0e0; /* Color del texto del bloque de citas en modo oscuro */
+    border-left: 10px solid #a7ffeb; /* Bordes del bloque de citas en modo oscuro */
 }
 
 /* Estilos de imagen de perfil */
@@ -294,11 +301,19 @@ a {
 .slider.round {
     cursor: url(mano.png), default;
 }
-body {
-    cursor: url(cursor.png), default;
+
+/* Estilos adicionales */
+.imagen-sobre-mi img {
+    max-width: 100%; /* Asegura que la imagen no sea más ancha que su contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 50%; /* Hace la imagen circular */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    display: block; /* Hace que la imagen se comporte como un bloque */
+    max-height: 200px; /* Ajusta según tus necesidades */
+    width: auto; /* Mantiene la proporción de la imagen */
+    border: 3px solid #009688; /* Añade un borde a la imagen */
 }
 
-/* Animación de nieve */
 @keyframes nieve {
     0% {
         top: -10px;
@@ -307,6 +322,7 @@ body {
         top: calc(100vh + 50px);
     }
 }
+
 i {
     position: absolute;
     background: #fffafa;
@@ -323,29 +339,9 @@ i {
     margin: 20px 0;
     border-radius: 10px;
 }
-#repositorio-enlaces ul {
-    list-style: none;
-    padding: 0;
-}
-#repositorio-enlaces ul li {
-    margin-bottom: 10px;
-}
-#repositorio-enlaces ul li a {
-    color: #00695c;
-    text-decoration: none;
-}
-#repositorio-enlaces ul li a:hover {
-    text-decoration: underline;
-}
 
-/* Estilos de imagen de "Sobre mí" */
-.imagen-sobre-mi img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 50%;
-    margin: 0 auto;
-    display: block;
-    max-height: 200px;
-    width: auto;
-    border: 3px solid #009688;
+/* Estilos adicionales para modo oscuro */
+body.dark-mode #acerca-de, body.dark-mode #repositorio-enlaces {
+    background-color: #333;
+    color: #e0e0e0;
 }
