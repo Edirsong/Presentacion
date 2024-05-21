@@ -1,12 +1,20 @@
-/* Estilos generales */
+/* Reset de CSS básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo del cuerpo */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
     background-color: white;
     color: #424242;
-    transition: background-color 0.5s, color 0.5s;
 }
+
+/* Contenedor principal */
 .container {
     width: 90%;
     max-width: 1200px;
@@ -14,19 +22,17 @@ body {
     overflow: hidden;
 }
 
-/* Estilos del header */
+/* Estilos del encabezado */
 header {
     background: #00695c;
     color: white;
     padding: 15px 0;
     border-bottom: #004d40 4px solid;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 header a {
     color: #cfd8dc;
     text-decoration: none;
     font-size: 18px;
-    transition: color 0.3s;
 }
 header ul {
     padding: 0;
@@ -69,97 +75,140 @@ header a:hover {
     line-height: 1.5;
 }
 
-/* Estilos de las columnas */
-.main-col {
-    float: left;
-    width: 65%;
-    padding: 20px;
+/* Estilos de la introducción */
+.intro {
+    margin: 20px 0;
+    text-align: center;
 }
-.side-col {
-    float: right;
-    width: 30%;
-    background: white;
-    padding: 20px;
-    margin-top: 20px;
-    box-shadow: 2px 2px 8px 0 rgba(0,0,0,0.2);
+.intro h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+.intro p {
+    font-size: 18px;
+    line-height: 1.6;
 }
 
-/* Estilos de las secciones */
+/* Estilos de las secciones principales */
 .section {
-    padding: 20px 0;
+    margin-bottom: 20px;
 }
 .section h2 {
     font-size: 24px;
-    color: #00796b;
+    border-bottom: 2px solid #00695c;
+    padding-bottom: 5px;
     margin-bottom: 10px;
-    position: relative;
-}
-.section h2::after {
-    content: '';
-    width: 50px;
-    height: 3px;
-    background: #00796b;
-    display: block;
-    margin-top: 5px;
-    border-radius: 2px;
 }
 .section ul {
+    list-style-type: none;
     padding: 0;
-    list-style: square inside;
 }
+.section li {
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+.section img.icon {
+    float: left;
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+}
+
+/* Estilos de proyectos */
+.proyecto {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.proyecto h3 {
+    margin: 0;
+    font-size: 20px;
+}
+
+/* Estilos de la columna lateral */
+.side-col {
+    float: right;
+    width: 30%;
+}
+.main-col {
+    float: left;
+    width: 65%;
+}
+.section h2 {
+    clear: both;
+}
+
+/* Estilos de habilidades */
 .section ul li {
-    margin-bottom: 15px;
+    position: relative;
+    padding-left: 25px;
+}
+.section ul li::before {
+    content: "\2022";
+    color: #00695c;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+/* Estilos de testimonios */
+blockquote {
+    background: #f9f9f9;
+    border-left: 10px solid #00695c;
+    margin: 10px 0;
+    padding: 10px 20px;
+    quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+    color: #00695c;
+    content: open-quote;
+    font-size: 30px;
+}
+blockquote:after {
+    color: #00695c;
+    content: close-quote;
+    font-size: 30px;
+}
+blockquote p {
+    display: inline;
+    font-size: 18px;
+    line-height: 1.6;
+}
+blockquote footer {
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #555;
 }
 
 /* Estilos del footer */
 footer {
+    background: #004d40;
+    color: white;
     text-align: center;
     padding: 20px 0;
-    background-color: #004d40;
-    color: white;
-    font-size: 16px;
+    margin-top: 20px;
+}
+footer a {
+    color: #a7ffeb;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+footer a:hover {
+    color: #ffccbc;
 }
 
-/* Estilo de la Foto de Perfil */
-.perfil {
-    text-align: center;
-    padding: 20px;
-}
-.perfil img {
-    width: 150px;
-    height: auto;
-    border-radius: 50%;
-    border: 3px solid #009688;
-}
-a {
-    cursor: url(mano.png), default; }
-
-/* Cambiar el estilo del puntero de modo oscuro */
-.slider.round{
-    cursor: url(mano.png), default; }
-
-/* Cambiar el estilo del puntero */
-body {
-    cursor: url(cursor.png), default;
-}
-
-/* Estilos para los iconos */
-.icon {
-    width: 30px;
-    height: 30px;
-    vertical-align: middle;
-    margin-right: 10px;
-}
-
-/* Estilos del switch del modo oscuro */
+/* Estilos del switch de tema */
 .theme-switch-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    z-index: 1000;
+    margin: 20px 0;
 }
 .theme-switch {
     display: inline-block;
@@ -178,7 +227,7 @@ body {
     position: absolute;
     right: 0;
     top: 0;
-    transition: .4s;
+    transition: 0.4s;
 }
 .slider:before {
     background-color: white;
@@ -187,7 +236,7 @@ body {
     height: 26px;
     left: 4px;
     position: absolute;
-    transition: .4s;
+    transition: 0.4s;
     width: 26px;
 }
 input:checked + .slider {
@@ -203,28 +252,50 @@ input:checked + .slider:before {
     border-radius: 50%;
 }
 
-/* Estilos para el modo oscuro */
+/* Estilos del modo oscuro */
 body.dark-mode {
     background-color: #424242;
     color: #e0e0e0;
 }
-
-/* Estilos para side-col en modo oscuro */
 body.dark-mode .side-col {
-    background-color: #333333;
+    background-color: #1e90ff;
+    color: #ffffff;
+}
+body.dark-mode #acerca-de h2,
+body.dark-mode #acerca-de p,
+body.dark-mode .side-col li {
     color: #ffffff;
 }
 
-/* Estilos para las imágenes */
-.imagen-sobre-mi img {
-    max-width: 100%;
+/* Estilos de imagen de perfil */
+.perfil {
+    text-align: center;
+    padding: 20px;
+}
+.perfil img {
+    width: 150px;
     height: auto;
     border-radius: 50%;
-    margin: 0 auto;
-    display: block;
-    max-height: 200px;
-    width: auto;
     border: 3px solid #009688;
+}
+
+/* Estilos de los iconos */
+.icon {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+/* Estilos del puntero personalizado */
+a {
+    cursor: url(mano.png), default;
+}
+.slider.round {
+    cursor: url(mano.png), default;
+}
+body {
+    cursor: url(cursor.png), default;
 }
 
 /* Animación de nieve */
@@ -236,7 +307,6 @@ body.dark-mode .side-col {
         top: calc(100vh + 50px);
     }
 }
-
 i {
     position: absolute;
     background: #fffafa;
@@ -253,28 +323,29 @@ i {
     margin: 20px 0;
     border-radius: 10px;
 }
-body.dark-mode #acerca-de h2,
-body.dark-mode #acerca-de p,
-body.dark-mode .side-col li {
-    color: #ffffff;
-}
-
 #repositorio-enlaces ul {
     list-style: none;
     padding: 0;
 }
-
 #repositorio-enlaces ul li {
     margin-bottom: 10px;
 }
-
 #repositorio-enlaces ul li a {
     color: #00695c;
     text-decoration: none;
-    transition: color 0.3s, text-decoration 0.3s;
+}
+#repositorio-enlaces ul li a:hover {
+    text-decoration: underline;
 }
 
-#repositorio-enlaces ul li a:hover {
-    color: #004d40;
-    text-decoration: underline;
+/* Estilos de imagen de "Sobre mí" */
+.imagen-sobre-mi img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+    max-height: 200px;
+    width: auto;
+    border: 3px solid #009688;
 }
