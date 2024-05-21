@@ -198,7 +198,7 @@ body.dark-mode {
 
 /* Estilos específicos para side-col en modo oscuro */
 body.dark-mode .side-col {
-    background-color: #ff0000; /* Cambia a rojo */
+    background-color: #1e90ff ; /* Cambia a rojo */
     color: #ffffff; /* Cambia el texto a blanco */
 }
 
