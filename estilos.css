@@ -67,7 +67,7 @@ header a:hover {
     /* background: linear-gradient(to right, #FF5733, #2ECC71, #3357FF); */
 
     background: linear-gradient(to right, #FF0000, #FFFF00, #00FF00);
-    color: white;
+    color: #3498DB;
     padding: 20px 0;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
