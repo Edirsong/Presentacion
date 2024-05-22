@@ -64,7 +64,7 @@ header a:hover {
 /* Estilos del banner */
 .banner {
     /* Gradiente lineal con colores brillantes */
-    background: linear-gradient(to right, #FF5733, #33FF57, #3357FF);
+    background: linear-gradient(to right, #FF5733, #2ECC71, #3357FF);
     color: white;
     padding: 20px 0;
     text-align: center;
